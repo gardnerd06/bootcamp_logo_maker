@@ -39,12 +39,13 @@ const questions = [
         },
       },
     ]
-function init(inquirer) {}
+function init() {
 const inquirer = require("inquirer");
 inquirer
   .prompt(questions)
   .then((answers) => {
-    console.log(answers)})
-
-
+    console.log(answers)}
+    )
+  }
+  
     init();
