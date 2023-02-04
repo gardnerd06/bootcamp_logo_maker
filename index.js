@@ -1,4 +1,4 @@
-
+const svg = require("./lib/shapes")
 const questions = [
    
      {
@@ -6,8 +6,8 @@ const questions = [
       name: "Text",
       message: "What Text would you like on your logo?",
       validate(value) {
-        if (value !== "") return true;
-        else console.log("You must input valid text!");
+        if (value.length <= 3) return true;
+        else console.log("You have a maximum of 3 symbols!");
       },
     },
     {
@@ -39,13 +39,28 @@ const questions = [
         },
       },
     ]
-function init() {
+function init(svg) {
+  
 const inquirer = require("inquirer");
 inquirer
   .prompt(questions)
   .then((answers) => {
-    console.log(answers)}
-    )
+    let text = answers.Text;
+    let color = answers.Color;
+    let shape = answers.Shape;
+    let design = answers.Design;
+    
+    
+    console.log(text,color,shape,design);
+    module.exports = {text, color, shape, design};
+    
+    
+    }
+    
+       )
+         
   }
   
-    init();
+    module.exports = {init}
+
+   
