@@ -64,3 +64,11 @@ inquirer
     module.exports = {init}
 
    
+    function render() {
+
+
+
+
+
+      fs.writeFile("../examples/logo.svg", shape);
+    };
