@@ -3,7 +3,7 @@ const triangle = require("./lib/triangle")
 const index = require("./lib/shapes")
 const circle = require("./lib/circle")
 const square = require("./lib/square")
-const fs = require('fs');
+
 
 const logo = new GetShapes();
 
@@ -50,11 +50,4 @@ logo.init();
 
 // prompt(index,triangle,circle,square,svg);
 
-    function render() {
-
-      fs.writeFile("../examples/logo.svg");
-
-      
-
-      fs.writeFile("../examples/logo.svg", shape);
-    };
+   
