@@ -1,74 +1,57 @@
-const svg = require("./lib/shapes")
-const questions = [
-   
-     {
-      type: "input",
-      name: "Text",
-      message: "What Text would you like on your logo?",
-      validate(value) {
-        if (value.length <= 3) return true;
-        else console.log("You have a maximum of 3 symbols!");
-      },
-    },
-    {
-        type: "input",
-        name: "Color",
-        message: "What text color would you like?",
-        validate(value) {
-          if (value !== "") return true;
-          else console.log("You must pick a color!");
-        },
-      },
-       {
-        type: "list",
-        name: "Shape",
-        message: "What shape would you like for your logo",
-        choices: [
-            "Triangle",
-            "Square",
-            "Circle",
-          ],
-        },
-       {
-        type: "input",
-        name: "Design",
-        message: "What color do you want your logo to be?",
-        validate(value) {
-          if (value !== "") return true;
-          else console.log("You must pick a color!");
-        },
-      },
-    ]
-function init(svg) {
-  
-const inquirer = require("inquirer");
-inquirer
-  .prompt(questions)
-  .then((answers) => {
-    let text = answers.Text;
-    let color = answers.Color;
-    let shape = answers.Shape;
-    let design = answers.Design;
-    
-    
-    console.log(text,color,shape,design);
-    module.exports = {text, color, shape, design};
-    
-    
-    }
-    
-       )
-         
-  }
-  
-    module.exports = {init}
+const GetShapes = require("./lib/cli")
+const triangle = require("./lib/triangle")
+const index = require("./lib/shapes")
+const circle = require("./lib/circle")
+const square = require("./lib/square")
 
-   
+const logo = new GetShapes();
+
+logo.init();
+
+// function prompt (index,triangle,circle,square,shape) {
+//   const init = index.init;
+//   const tri = triangle.Triangle;
+//   const circ = circle.Circle;
+//   const squ = square.Square;
+//   const pick = shape.shape;
+  
+
+  
+  
+  
+//   init();
+
+  // switch (pick) {
+  //   case "Triangle":
+  //     const pickTri = new tri;
+  //     return pickTri;
+  //   case "Circle":
+  //     const pickcirc = new circ;
+  //     return pickcirc;
+  //   case "Square":
+  //     const picksqu = new squ;
+  //     return picksqu;
+  //   }
+
+//   // function renderSvg(index)
+//   // {
+//   // const color = index.color;
+//   // const design = index.design;
+//   // const shape = index.shape;
+//   // const text = index.text;
+//   // console.log(color);
+// // };
+
+
+// }
+
+// prompt(index,triangle,circle,square,svg);
+
     function render() {
 
 
 
-
+      fs.writeFile("../examples/logo.svg", this.shape);
 
       fs.writeFile("../examples/logo.svg", shape);
     };
