@@ -23,6 +23,8 @@ The code for this project can be found: [Repository]<https://github.com/gardnerd
 The video to see this app in action can be found: [GoogleDrive]<https://drive.google.com/file/d/1ZN4aKy6v0HzJhxhliDRdwZxa483BGzuo/view>
 
 ## Screenshots
+![Screenshot (25)](https://user-images.githubusercontent.com/115792714/217450880-46f2ad28-0433-444f-a221-02248eaf8092.png)
+![Screenshot (24)](https://user-images.githubusercontent.com/115792714/217450888-28733abe-55e3-48e9-9bc3-c0c57e91c76b.png)
 
 ## Contributors
 
