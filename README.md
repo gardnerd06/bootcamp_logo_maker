@@ -20,7 +20,7 @@ The purpose of this project is to create a logo creator for svg and to test the 
 ## Installation
 
 The code for this project can be found: [Repository]<https://github.com/gardnerd06/bootcamp_logo_maker>
-The video to see this app in action can be found: [GoogleDrive]<>
+The video to see this app in action can be found: [GoogleDrive]<https://drive.google.com/file/d/1ZN4aKy6v0HzJhxhliDRdwZxa483BGzuo/view>
 
 ## Screenshots
 
